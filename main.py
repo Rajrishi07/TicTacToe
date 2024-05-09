@@ -22,7 +22,6 @@ def onclick(x, y, btn):
     used = used + 1
     find_winner(x, y, chance)
     chance = (chance + 1) % 2
-    print(ChanceDict[chance])
     btn.config(state=DISABLED, image=ChanceDict[chance], height=HEIGHT + 145, width=WIDTH + 125)
 
 
